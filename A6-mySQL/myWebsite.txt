@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website to demonstrate use of mySQL</title>
+</head>
+<body>
+<fieldset>
+<form action = "sqlphpfile.php" method = "POST">
+  <i> (for best experience, refresh page before use, to erase any
+      residual form data) </i>
+  <h2> Click to display the contents of a table: </h2>
+    <input type="submit" value="Authors" name="disp_Authors">&emsp;
+    <input type="submit" value="Titles" name="disp_Titles">
+	<br><br>
+  
+  <h2> Adding a record: </h2>
+    <table>
+    <tr> <!-- using suffix 1 to denote input for first button -->
+	<td> <label for="author">Author: </label> </td>
+    <td> <input type="text" name="author1" id="author1"> </td>
+	</tr><tr>
+    <td> <label for="publisher">Publisher: </label> </td>
+    <td> <input type="text" name="publisher1" id="publisher1"> </td>
+	</tr>
+	</table>
+    <input type="submit" name="add_Authors" value="Add to Table Authors">
+	<br><br>
+	
+	<table>
+    <tr> <!-- using suffix 2 to denote input for second button -->
+	<td> <label for="title">Title: </label> </td>
+    <td> <input type="text" name="title2" id="title2"> </td>
+	</tr><tr>
+    <td> <label for="author">Author: </label> </td>
+    <td> <input type="text" name="author2" id="author2"> </td>
+	</tr><tr>
+    <td> <label for="year">Year: </label> </td>
+    <td> <input type="text" name="year2" id="year2"> </td>
+	</tr>
+	</table>
+    <input type="submit" name="add_Titles" value="Add to Table Titles">
+	<br><br>
+	
+  <h2> Deleting a record: </h2>
+    <table> <!-- using suffix del to denote input for deletion -->
+    <tr>
+	<td> <label for="author">Delete Author: </label> </td>
+    <td> <input type="text" name="author_del" id="author_del"> </td> 
+	</tr>
+	</table>
+    <input type="submit" name="del_Authors" value="Delete from Authors table">
+	<br><br>
+	
+	<table>
+    <tr> <td> <label for="title">Delete Title: </label> </td>
+    <td> <input type="text" name="title_del" id="title_del"> </td> </tr>
+	</table>
+    <input type="submit" name="del_Titles" value="Delete from Titles table">
+	<br><br>
+	
+  <h2> Update year of publication for a given title: </h2>
+    <table> <!-- using suffix upd to denote input for updation -->
+	<tr>
+    <td> <label for="title">Title: </label> </td>
+    <td> <input type="text" name="title_upd" id="title_upd"> </td>
+	</tr>
+	<tr>
+    <td> <label for="year">Year (new): </label> </td>
+    <td> <input type="text" name="year_upd" id="year_upd"> </td>
+	</tr>
+	</table>
+    <input type="submit" name="upd_Titles" value="Update Year">
+	<br><br>
+
+  <h2> Find details of a book: </h2>
+    <table> <tr>
+    <td> <label for="title">Book Title: </label> </td>
+    <td> <input type="text" name="book_title" id="book_title"> </td>
+	</tr> </table>
+    <input type="submit" name="disp_Book" value="Display Book Details">
+	<br><br>
+
+  <h2> Publisher-wise listing of books: </h2>
+    <table> <tr>
+    <td> <label for="publisher_label">Publisher Name: </label> </td>
+    <td> <input type="text" name="publisher_name" id="publisher_name"> </td>
+	</tr> <table>
+    <input type="submit" name="disp_Details_pubwise" value="Display Publisher's Books"><br><br>
+</form>
+</fieldset>
+</body>
+</html>

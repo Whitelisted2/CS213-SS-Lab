@@ -12,3 +12,4 @@ This repository contains files related to Software Systems Lab (Autumn 2021)
 6. mySQL: To create databases and perform different tasks on it, using mySQL.
 7. Python: To create random distributions, then create charts depicting them.
 8. Git: To create a webpage hosted on GitHub, with the help of Git commands.
+9. Linux: To use Linux and Bash Scripting to do various tasks. 

@@ -4,6 +4,9 @@
     <title>Index</title>
 </head>
 <body>
+    <?php
+    $placeholder = 0;
+    ?>
 <fieldset>
     <form action="login.php" method="POST" >
         <h1>Authentication Form</h1>

@@ -1,9 +1,12 @@
 <html>
 <body>
 <h1 style="text-align:center;"><b><u>Upload/Delete Image</u></b></h1>
+<?php
+$placeholder = 0;
+?>
 <center>
 <form action="upload.php" method="POST" enctype="multipart/form-data">
-    
+
 	<fieldset>
 	<b> File Upload </b><br>
     <input type="file" name="myfile[]" multiple><br><br>

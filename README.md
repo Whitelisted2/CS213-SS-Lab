@@ -17,4 +17,4 @@ This repository contains files related to Software Systems Lab (Autumn 2021).
 ## Course Project
 VaxiNO'Pandemic, a portal to book and manage vaccination appointments in an efficient, user-friendly manner.
 
-You can find it in [this](https://whitelisted2.github.io/VaxiNO-Pandemic) GitHub Repository.
+You can find it in [this](https://github.com/Whitelisted2/VaxiNO-Pandemic) GitHub Repository.

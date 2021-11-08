@@ -1,120 +1,45 @@
 <!DOCTYPE html>
 <html>
-<head>
- <title>Question4</title>
-</head>
-
-<body>
-<fieldset>
- <form>
- <div class="User" id="User">
- <center>
-  <h2>Enter user details:</h2>
-  <table> <!-- a table to align the input boxes neatly -->
-   <tr>
-    <td> <label for="name">Name:</label> </td>
-    <td> <input type="text" name="name" id="name"> </td>
-   </tr>
-   <tr>
-    <td> <label for="address">Address:</label> </td>
-    <td> <input type="text" name="address" id="address"> </td>
-   </tr>
-   <tr>
-    <td> <label for="phNum">Phone Number:</label> </td>
-    <td> <input type="tel" name="phNum" id="phNum"> </td>
-   </tr>
-   <tr>
-    <td> <label for="email">Email:</label> </td>
-    <td> <input type="email" name="email" id="email"> </td>
-   </tr>
-   <tr>
-    <td> <label for="edQual">Educational Qualifications:</label> </td>
-    <td> <input type="text" name="edQual" id="edQual"> </td>
-   </tr>
-   <tr>
-    <td> <label for="age">Age:</label> </td>
-    <td> <input type="number" name="age" id="age"> </td>
-   </tr>    
-  </table>
- <button type="submit" onclick="display()">Display</button>
- </center>
- </div>
- </form>
-</fieldset>
-<script>
- function display(){
-  var name = document.getElementById("name").value;
-  var address = document.getElementById("address").value;
-  var phNum = document.getElementById("phNum").value;
-  var email = document.getElementById("email").value;
-  var edQual = document.getElementById("edQual").value;
-  var age = document.getElementById("age").value;
-  // get all values into variables first
-  
-  var table='';
-  for(var r=0; r<6; r++) // add the rows one by one
-  {
-   table += '<tr>';
-   switch(r){
-    case 0:
-          table += ("<td width='210px'>" + "User.Name" + "</td>");
-          if(name!=""){
-           table += ("<td>" + name + "</td>");
-          }else{
-           table += ("<td>" + "Name not entered" + "</td>");
-          }
-          break;
-    case 1:
-          table += "<td>" + "User.Address" + "</td>";
-          if(address!=""){
-           table += "<td>" + address + "</td>";
-          }else{
-           table += "<td>" + "Address not entered" + "</td>";
-          }
-          break;
-    case 2:
-          table += "<td>" + "User.Phone Number" + "</td>";
-          if(phNum!=""){
-           table += "<td>" + phNum + "</td>";
-          }else{
-           table += "<td>" + "Phone Number not entered" + "</td>";
-          }
-          break;
-    case 3:
-          table += "<td>" + "User.EmailID" + "</td>";
-          if(email!=""){
-           table += "<td>" + email + "</td>";
-          }else{
-           table += "<td>" + "Email ID not entered" + "</td>";
-          }
-          break;
-    case 4:
-          table += "<td>" + "User.Educational Qualifications" + "</td>";
-          if(edQual!=""){
-           table += "<td>" + edQual + "</td>";
-          }else{
-           table += "<td>" + "Edu Qualifications not entered" + "</td>";
-          }
-          break;
-    case 5:
-          table += "<td>" + "User.Age" + "</td>";
-          if(age!=""){
-           table += "<td>" + age + "</td>";
-          }else{
-           table += "<td>" + "Age not entered" + "</td>";
-          }
-          break;
-       }
-    table+='</tr>'; 
-   }
-   document.write('<style> table{ font-family: Calibri; }');
-   // doucment.write() erases all previous data, including CSS. So to format the output table, we just write that on as well
-   document.write('tr:nth-child(odd){ background-color: #a09c9c;}');
-   document.write('tr:nth-child(even){ background-color: #d0cccc;}');
-   // deduced the colors using an online color picker, and alternated them using the nth-child() selector
-   document.write('</style>');
-   document.write('<br>'+'<center> <table>' + table + '</table> </center>');
- }
-</script>
-</body>
+      <head>
+            <title>Question4</title>
+            <script src="script.js"></script>
+      </head>
+      <body>
+            <fieldset>
+                  <form>
+                        <div class="User" id="User">
+                              <center>
+                              <h2>Enter user details:</h2>
+                              <table> <!-- a table to align the input boxes neatly -->
+                                    <tr>
+                                          <td> <label for="name">Name:</label> </td>
+                                          <td> <input type="text" name="name" id="name"> </td>
+                                    </tr>
+                                    <tr>
+                                          <td> <label for="address">Address:</label> </td>
+                                          <td> <input type="text" name="address" id="address"> </td>
+                                    </tr>
+                                    <tr>
+                                          <td> <label for="phNum">Phone Number:</label> </td>
+                                          <td> <input type="tel" name="phNum" id="phNum"> </td>
+                                    </tr>
+                                    <tr>
+                                          <td> <label for="email">Email:</label> </td>
+                                          <td> <input type="email" name="email" id="email"> </td>
+                                    </tr>
+                                    <tr>
+                                          <td> <label for="edQual">Educational Qualifications:</label> </td>
+                                          <td> <input type="text" name="edQual" id="edQual"> </td>
+                                    </tr>
+                                    <tr>
+                                          <td> <label for="age">Age:</label> </td>
+                                          <td> <input type="number" name="age" id="age"> </td>
+                                    </tr>    
+                              </table>
+                              <button type="submit" onclick="display()">Display</button>
+                              </center>
+                        </div>
+                  </form>
+            </fieldset>
+      </body>
 </html>

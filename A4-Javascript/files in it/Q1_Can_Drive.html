@@ -2,33 +2,13 @@
 <html>
 <head>
     <title>Question 1</title>
+    <script src="script.js"></script>
 </head>
 <body>
     <center><h1>Drivers License Eligibility Check</h1></center>
     <label for="age">Enter your Age:</label> <br>
     <input name="age" id="age">
-    <button onclick="myfunction()">Submit</button>
+    <button onclick="checkAge()">Submit</button>
     <p id="demo"></p>
-
-    <script>
-    function myfunction(){
-     let displaytext;
-     let age = Number(document.getElementById("age").value);
-     document.getElementById("age").value = '';
-     if (isNaN(age)){
-      document.getElementById("demo").innerHTML="Not A Number";
-      return;
-     }else if(age < 18){
-      alert("Too young to drive!");
-      document.getElementById("demo").innerHTML="";
-     }else if(age > 100){
-      alert("Too old to drive!");
-      document.getElementById("demo").innerHTML="";
-     }else{
-      alert("You are eligible to drive!");
-      document.getElementById("demo").innerHTML="";
-     }
-    }
-    </script>
 </body>
 </html>

@@ -1,65 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Question3</title>
-</head>
-
-<body>
-<form>
- <div class="freqChar">
-  <center>
-   <h2>To find the most frequently occurring character</h2>
-  </center>
-  <label for="str">Enter a string:</label> <br>
-  <input type="text" name="str" id="str">
-  <button type="submit" onclick="mostFreq()">Display</button>
- </div>
-</form>
-
-<script>
- function mostFreq(){
-  var inputStr = document.getElementById("str").value;
-  if(inputStr == ""){
-   alert("Enter a string, please.");
-   return;
-  }
-  var str = inputStr.toLowerCase().replace(/[^a-zA-Z0-9]+/g, '');
-                               //remove all non-alphanumeric characters
-  if(str == ""){
-  alert("Enter a string with alphanumeric characters, please.");
-  return;
-  }
-  var strArray = str.split("");// making an array
-  strArray.sort();             // sort this array
-  var count, maxCount;
-  maxCount = 0; // this will store freq of most freq occurring char
-  const maxChar = []; // this will store most freq occurring character(s)
-  var n = strArray.length;
-  var i = 0;
-  while(i < n){
-   count = 1;
-   while (i+1 < n && strArray[i+1] == strArray[i]){
-    count++;
-    i++;
-   }
-   if(count > maxCount){
-    maxCount = count;
-    maxChar.splice(0, maxChar.length);
-    maxChar.push(strArray[i]);
-   }
-   else if(count == maxCount){
-    maxChar.push(strArray[i]);
-   }
-   i++;
-  }
-  if(maxChar.length > 1){
-   alert("Most Frequent Characters : " + maxChar + "\nNumber of occurrences (of each) : " + maxCount);
-   return;
-  }else{
-   alert("Most Frequent Character: " + maxChar + "\nNumber of occurrences: " + maxCount);
-  }
-}
-</script>
-</body>
-
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <form>
+      <div class="freqChar">
+        <center><h2>To find the most frequently occurring character</h2></center>
+        <label for="str">Enter a string:</label> <br>
+        <input type="text" name="str" id="str">
+        <button type="submit" onclick="mostFreq()">Display</button>
+      </div>
+    </form>
+  </body>
 </html>

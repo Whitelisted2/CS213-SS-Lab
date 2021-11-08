@@ -1,6 +1,6 @@
 # CS213-SS-Lab
 
-This repository contains files related to Software Systems Lab (Autumn 2021) 
+This repository contains files related to Software Systems Lab (Autumn 2021).
 
 
 ## Assignments Included
@@ -13,3 +13,8 @@ This repository contains files related to Software Systems Lab (Autumn 2021)
 7. Python: To create random distributions, then create charts depicting them.
 8. Git: To create a [webpage](https://whitelisted2.github.io/Profile-Page/) hosted on GitHub, with the help of Git commands.
 9. Linux: To use Linux and Bash Scripting to do various tasks. 
+
+## Course Project
+VaxiNO'Pandemic, a portal to book and manage vaccination appointments in an efficient, user-friendly manner.
+
+You can find it in [this](https://github.com/Whitelisted2/VaxiNO-Pandemic) GitHub Repository.

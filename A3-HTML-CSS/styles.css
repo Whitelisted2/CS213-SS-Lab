@@ -1,0 +1,38 @@
+.header{
+        width:100%;
+        height:100px;
+        background-color:#c4fffa;
+}
+.logo{
+        color:#009488;
+        font-size:40px;
+        font-family:'Trebuchet MS';
+        text-align:left;
+        float:left;
+        line-height:50px;
+        padding-left:10px;
+}
+.column1{
+        float:left;
+        font-family:serif;
+        width:50%;
+        background-color:#ff99e6;
+}
+.column2{
+        float:left;
+        font-family:sans-serif;
+        width:50%;
+        background-color:#ff8f8f;
+        
+}
+.row:after{
+        content:"";
+        display:table;
+        clear:both; /* no more floating elements, after each time the two columns are done */
+        
+}
+table, th, td {
+        border: 1px solid black;
+        border-collapse:collapse;
+        padding: 5px;
+}
